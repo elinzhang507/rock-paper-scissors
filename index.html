@@ -3,9 +3,64 @@
     <head>
         <meta charset="UTF-8">
         <title>Page title</title>
-        <script src="script.js"></script>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .button-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 200px 500px 50px 500px;
+                gap: 10px;
+
+            }
+            .button-container button {
+                padding: 10px 20px;
+                flex: 1;
+            }
+            .comment-container {
+                max-width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 20px;
+                min-height: 20px; /* Ensure it takes up space even when empty */
+                height: 40px; /* Fixed height to prevent movement */
+            }
+            .score-container {
+                max-width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 20px;
+            }
+            .final-container {
+                max-width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 20px;
+                min-height: 20px; /* Ensure it takes up space even when empty */
+                height: 40px; /* Fixed height to prevent movement */
+            }
+        </style>
     </head>
     <body>
+        <div class="button-container">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+        </div>
+        <div class="comment-container">
         
+        </div> 
+        <div class="score-container">
+            Score is: 0-0
+        </div>
+        <div class="final-container">
+
+        </div>
+    <script src="script.js"></script>   
     </body>
+    
 </html>
